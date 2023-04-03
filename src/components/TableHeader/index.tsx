@@ -1,6 +1,6 @@
 import { Button, Center, Select, Th, Tr } from '@chakra-ui/react'
 import { ChangeEvent, useState } from 'react'
-import useUrlSearch from '../../hooks/urlSearch/useUrlSearch'
+import useUrlSearch from '@hooks/urlSearch/useUrlSearch'
 
 function TableHeader() {
   const [isIdAsc, setIsIdAsc] = useState(false)

@@ -10,7 +10,7 @@ function useUrlSearch() {
 
   const setSearchParams = useCallback(
     (setParams: SearchParams) => {
-      serUrlTerm(urlTerm)
+      // serUrlTerm(urlTerm)
       Object.keys(setParams).forEach(key => {
         urlTerm.set(key, setParams[key])
         serUrlTerm(urlTerm)
@@ -27,9 +27,7 @@ function useUrlSearch() {
   )
 
   const getAllSearchParams = useCallback(() => {
-    const currentParams = [...urlTerm.entries()]
-
-    return Object.fromEntries(currentParams)
+    return Object.fromEntries(urlTerm.entries())
   }, [urlTerm])
 
   const resetSearchParams = useCallback(() => {

@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import getDataTable from '../../apis/TableApi.ts'
+import getDataTable from '@apis/TableApi.ts'
 
 function useGetTableQuery() {
   const useGetAllTableDataQuery = () => {

@@ -1,6 +1,6 @@
 import { Button, Center, FormControl, FormLabel, Input } from '@chakra-ui/react'
 import { FormEvent, useEffect, useRef } from 'react'
-import useUrlSearch from '../../hooks/urlSearch/useUrlSearch'
+import useUrlSearch from '@hooks/urlSearch/useUrlSearch'
 
 function TableControl() {
   const searchTermRef = useRef<HTMLInputElement | null>(null)

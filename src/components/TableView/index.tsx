@@ -13,10 +13,10 @@ import {
 } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import { useCallback, useEffect } from 'react'
-import usePaginate from '../../hooks/pagination/usePaginate'
-import useGetTableQuery from '../../hooks/queries/useGetTableQuery'
-import useTableSorting from '../../hooks/sorting/useTableSorting'
-import UseUrlSearch from '../../hooks/urlSearch/useUrlSearch'
+import usePaginate from '@hooks/pagination/usePaginate'
+import useGetTableQuery from '@hooks/queries/useGetTableQuery'
+import useTableSorting from '@hooks/sorting/useTableSorting'
+import UseUrlSearch from '@hooks/urlSearch/useUrlSearch'
 import Pagination from '../Pagination'
 import TableControl from '../TableControl'
 import TableHeader from '../TableHeader'
@@ -87,7 +87,13 @@ function TableView() {
     } else {
       sortAndFilterTableData(currentParams)
     }
-  }, [resetSearchParams, getAllSearchParams, sortAndFilterTableData])
+    setCurrentPage(Number(currentParams.page))
+  }, [
+    resetSearchParams,
+    getAllSearchParams,
+    sortAndFilterTableData,
+    setCurrentPage,
+  ])
 
   return (
     <Stack h="85vh">

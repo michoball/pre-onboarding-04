@@ -1,6 +1,6 @@
 import { Button, ButtonGroup, Container } from '@chakra-ui/react'
 import { Dispatch, SetStateAction, useEffect, useMemo, useState } from 'react'
-import useUrlSearch from '../../hooks/urlSearch/useUrlSearch'
+import useUrlSearch from '@hooks/urlSearch/useUrlSearch'
 import PaginationItem from '../PaginationItem'
 
 interface PaginationProps {

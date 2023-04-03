@@ -1,5 +1,5 @@
 import { Box, Center, Image, Text } from '@chakra-ui/react'
-import TableView from '../../components/TableView'
+import TableView from '@components/TableView'
 
 function Home() {
   return (

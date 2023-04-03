@@ -1,7 +1,7 @@
 import { Button } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 interface PaginationItemProps {
   pageNumber: number
